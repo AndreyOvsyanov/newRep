@@ -36,10 +36,10 @@ namespace ClassLibrary1
             {
                 double D = b * b - 4 * a * c;
                 if (D > 0) return new double[] { (-b + Math.Sqrt(D)) / (2 * a), (-b - Math.Sqrt(D)) / (2 * a) };
-                else if (D == 0) return new double[] { -b / (2 * a) };
+                else if (D == 0) return new double[] { -b / (2 * a), -b / (2 * a) };
                 else
                 {
-                    error = "Нет корней";
+                    error = "Нет действительных корней";
                     return new double[0];
                 }
             }
